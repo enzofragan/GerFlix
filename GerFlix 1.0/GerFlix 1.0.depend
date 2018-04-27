@@ -16,3 +16,20 @@
 1524601547 source:c:\test\scarafilo\gerflix 1.0\usuario.c
 	"Usuario.h"
 
+1524840514 source:d:\fragan\gerflix-master\gerflix-master\gerflix 1.0\usuario.c
+	"Usuario.h"
+
+1524743641 d:\fragan\gerflix-master\gerflix-master\gerflix 1.0\usuario.h
+	"Serie.h"
+
+1524743641 d:\fragan\gerflix-master\gerflix-master\gerflix 1.0\serie.h
+
+1524834975 source:d:\fragan\gerflix-master\gerflix-master\gerflix 1.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Usuario.h"
+
+1524832278 source:d:\fragan\gerflix-master\gerflix-master\gerflix 1.0\serie.c
+	"Serie.h"
+	<string.h>
+

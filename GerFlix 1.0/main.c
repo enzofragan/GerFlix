@@ -21,6 +21,9 @@ int main()
     4. Mostrar por cada serie, el nombre de los usuarios que la ven.
 */
 
+/*mostrarListaSeries(listaDeSeries,TAMSERIE);
+mostrarListaUsuarios(listaDeUsuarios,TAMUSUARIO);*/
+mostrarUsuarioConSuSerie(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
 
 
 
