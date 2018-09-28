@@ -23,7 +23,8 @@ int main()
 
 /*mostrarListaSeries(listaDeSeries,TAMSERIE);
 mostrarListaUsuarios(listaDeUsuarios,TAMUSUARIO);*/
-mostrarUsuarioConSuSerie(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
+//mostrarUsuarioConSuSerie(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
+mostrarSeriesConSuUsuario(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
 
 
 

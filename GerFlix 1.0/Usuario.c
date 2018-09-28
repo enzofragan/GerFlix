@@ -47,7 +47,7 @@ void mostrarUsuarioConSuSerie(eUsuario usuarios[], int cantU, eSerie series[], i
 {
     int i;
     int j;
-    /**for(i=0;i<cantU;i++)///mostrar de todos los usuario una sola serie
+    for(i=0;i<cantU;i++)///mostrar de todos los usuario una sola serie
     {
         for(j=0;j<cantS;j++)
         {
@@ -60,7 +60,14 @@ void mostrarUsuarioConSuSerie(eUsuario usuarios[], int cantU, eSerie series[], i
                 }
             }
         }
-    }*/
+    }
+}
+
+void mostrarSeriesConSuUsuario(eUsuario usuarios[], int cantU, eSerie series[], int cantS)
+{
+    int i;
+    int j;
+
     for(i=0;i<cantU;i++)
     {
         for(j=0;j<cantS;j++)
