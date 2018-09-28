@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Usuario.h"
+#include "Usu-Ser.h"
 #define TAMSERIE 20
 #define TAMUSUARIO 100
 
