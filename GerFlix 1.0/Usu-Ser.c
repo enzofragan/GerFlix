@@ -1,6 +1,6 @@
 #include "Usu-Ser.h"
 
-void mostrarUsuarioConSuSerie(eUsuario usuarios[], int cantU, eSerie series[], int cantS)
+void mostrarUsuarioConSuSerie(eUsuario usu[], int cantU, eSerie ser[], int cantS)
 {
     int i;
     int j;
@@ -8,18 +8,18 @@ void mostrarUsuarioConSuSerie(eUsuario usuarios[], int cantU, eSerie series[], i
     {
         for(j=0; j<cantS; j++)
         {
-            if(usuarios[i].estado!=0 && series[j].estado!=0)
+            if(usu[i].estado!=0 && ser[j].estado!=0)
             {
-                if(usuarios[i].idSerie==series[j].idSerie)
+                if(usu[i].idSerie==ser[j].idSerie)
                 {
-                    printf("\n%d %s %d %s\n",usuarios[i].idUsuario,usuarios[i].nombre,series[j].idSerie,series[j].nombre);
+                    printf("\n%d %s %d %s\n",usu[i].idUsuario,usu[i].nombre,ser[j].idSerie,ser[j].nombre);
                 }
             }
         }
     }
 }
 
-void mostrarSeriesConSuUsuario(eUsuario usuarios[], int cantU, eSerie series[], int cantS)
+void mostrarSerieConSuUsuario(eUsuario usu[], int cantU, eSerie ser[], int cantS)
 {
     int i;
     int j;
@@ -28,11 +28,11 @@ void mostrarSeriesConSuUsuario(eUsuario usuarios[], int cantU, eSerie series[], 
     {
         for(j=0; j<cantS; j++)
         {
-            if(series[j].estado!=0 && usuarios[i].estado!=0)
+            if(ser[j].estado!=0 && usu[i].estado!=0)
             {
-                if(series[j].idSerie==usuarios[i].idSerie)
+                if(ser[j].idSerie==usu[i].idSerie)
                 {
-                    printf("\n%d %s %s %d %s\n",series[j].idSerie,series[j].nombre,series[j].genero,series[j].cantidadTemporadas,usuarios[i].nombre);
+                    printf("\n%d %s %s %d %s\n",ser[j].idSerie,ser[j].nombre,ser[j].genero,ser[j].cantidadTemporadas,usu[i].nombre);
                 }
             }
         }

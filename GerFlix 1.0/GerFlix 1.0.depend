@@ -33,10 +33,10 @@
 	"Serie.h"
 	<string.h>
 
-1538138661 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\main.c
+1538140242 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\main.c
 	<stdio.h>
 	<stdlib.h>
-	"Usuario.h"
+	"Usu-Ser.h"
 
 1538140219 c:\users\alumno\desktop\gerflix\gerflix 1.0\usuario.h
 
@@ -52,7 +52,7 @@
 1538140219 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.c
 	"Usu-Ser.h"
 
-1538140219 c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.h
+1538140398 c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.h
 	"Serie.h"
 	"Usuario.h"
 
