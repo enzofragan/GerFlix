@@ -31,6 +31,12 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     }
 }
+
+void mostrarUsuario(eUsuario usuarios)
+{
+    printf("\n%d %s %d\n",usuarios.idUsuario,usuarios.nombre,usuarios.idSerie);
+}
+
 void mostrarListaUsuarios(eUsuario usuarios[], int cant)
 {
     int i;
@@ -38,7 +44,39 @@ void mostrarListaUsuarios(eUsuario usuarios[], int cant)
     {
         if(usuarios[i].estado!=0)
         {
-            printf("\n%d %s %d\n",usuarios[i].idUsuario,usuarios[i].nombre,usuarios[i].idSerie);
+            mostrarUsuario(usuarios[i]);
         }
     }
+}
+
+int buscarLibreUsuario(eUsuario usuarios[],int cant)
+{
+    int i;
+    int libre;
+
+    for(i=0;i<cant;i++)
+    {
+        if(usuarios[i].estado==0)
+        {
+            libre=i;
+            break;
+        }
+    }
+
+    return libre;
+}
+
+int idAutoUsuario(eUsuario usuarios[],int cant)
+{
+    int i;
+    int id;
+
+    i=buscarLibreUsuario(usuarios,cant);
+
+    if(i>=0)
+    {
+        id=i+1000;
+    }
+
+    return id;
 }

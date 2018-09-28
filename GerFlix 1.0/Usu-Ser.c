@@ -1,4 +1,6 @@
 #include "Usu-Ser.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void mostrarUsuarioConSuSerie(eUsuario usu[], int cantU, eSerie ser[], int cantS)
 {
@@ -13,6 +15,7 @@ void mostrarUsuarioConSuSerie(eUsuario usu[], int cantU, eSerie ser[], int cantS
                 if(usu[i].idSerie==ser[j].idSerie)
                 {
                     printf("\n%d %s %d %s\n",usu[i].idUsuario,usu[i].nombre,ser[j].idSerie,ser[j].nombre);
+                    break;
                 }
             }
         }
@@ -36,5 +39,39 @@ void mostrarSerieConSuUsuario(eUsuario usu[], int cantU, eSerie ser[], int cantS
                 }
             }
         }
+    }
+}
+
+void altaUsuario(eUsuario usu[],int cantU,eSerie ser[],int cantS)
+{
+    int i;
+    int aux;
+
+    i=buscarLibreUsuario(usu,cantU);
+
+    if(i>=0)
+    {
+        usu[i].idUsuario=idAutoUsuario(usu,cantU);
+
+        printf("ingrese su nombre: ");
+        fflush(stdin);
+        gets(usu[i].nombre);
+
+        mostrarListaSeries(ser,cantS);
+
+        printf("ingrese el id de su serie: ");
+        fflush(stdin);
+        scanf("%d",&aux);
+
+        while(aux<100 && aux>104)
+        {
+            printf("ingrese el id valido: ");
+            fflush(stdin);
+            scanf("%d",&aux);
+        }
+
+        usu[i].idSerie=aux;
+
+        mostrarUsuario(usu[i]);
     }
 }

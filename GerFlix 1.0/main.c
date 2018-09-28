@@ -24,6 +24,8 @@ int main()
 //mostrarListaSeries(listaDeSeries,TAMSERIE);
 //mostrarListaUsuarios(listaDeUsuarios,TAMUSUARIO);
 //mostrarUsuarioConSuSerie(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
-//mostrarSeriesConSuUsuario(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
+//mostrarSerieConSuUsuario(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
+//altaUsuario(listaDeUsuarios,TAMUSUARIO,listaDeSeries,TAMSERIE);
+
     return 0;
 }
