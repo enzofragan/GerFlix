@@ -7,7 +7,7 @@ typedef struct
     char nombre[50];
     int idSerie;
     int estado;
-}eUsuario;
+} eUsuario;
 
 void inicializarUsuariosEstado(eUsuario[], int);
 void inicializarUsuariosHardCode(eUsuario[]);

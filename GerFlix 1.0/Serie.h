@@ -6,7 +6,7 @@ typedef struct
     char genero[20];
     int cantidadTemporadas;
     int estado;
-}eSerie;
+} eSerie;
 
 void inicializarSeriesEstado(eSerie[], int);
 void inicializarSeriesHardCode(eSerie[]);

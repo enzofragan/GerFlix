@@ -1,4 +1,3 @@
-
 #include "Serie.h"
 #include <string.h>
 
@@ -25,8 +24,8 @@ void inicializarSeriesEstado(eSerie series[], int cant)
 void inicializarSeriesHardCode(eSerie series[])
 {
     int id[5] = {100,101,102,103,104};
-    char nombre[][50]={"TBBT","TWD","GOT","BB","LCDP"};
-    char genero[][50]={"Comedia","Terror","Suspenso","Policial","Policial"};
+    char nombre[][50]= {"TBBT","TWD","GOT","BB","LCDP"};
+    char genero[][50]= {"Comedia","Terror","Suspenso","Policial","Policial"};
     int cantidad[5] = {10,9,7,5,2};
 
     int i;
@@ -43,7 +42,7 @@ void inicializarSeriesHardCode(eSerie series[])
 void mostrarListaSeries(eSerie series[],int cant)
 {
     int i;
-    for(i=0;i<cant;i++)
+    for(i=0; i<cant; i++)
     {
         if(series[i].estado!=0)
         {
@@ -51,4 +50,3 @@ void mostrarListaSeries(eSerie series[],int cant)
         }
     }
 }
-
