@@ -33,20 +33,20 @@
 	"Serie.h"
 	<string.h>
 
-1538146038 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\main.c
+1538654997 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Usu-Ser.h"
 
-1538146272 c:\users\alumno\desktop\gerflix\gerflix 1.0\usuario.h
+1538654997 c:\users\alumno\desktop\gerflix\gerflix 1.0\usuario.h
 
-1538148551 c:\users\alumno\desktop\gerflix\gerflix 1.0\serie.h
+1538654997 c:\users\alumno\desktop\gerflix\gerflix 1.0\serie.h
 
-1538146134 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\serie.c
+1538654997 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\serie.c
 	"Serie.h"
 	<string.h>
 
-1538146272 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\usuario.c
+1538654997 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\usuario.c
 	"Usuario.h"
 
 1538146279 source:c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.c
@@ -54,7 +54,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1538145885 c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.h
+1538654997 c:\users\alumno\desktop\gerflix\gerflix 1.0\usu-ser.h
 	"Serie.h"
 	"Usuario.h"
 

@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1538660803 source:c:\users\alumno\desktop\gerflix\gerflix_2.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"us-serie.h"
+
+1538660773 source:c:\users\alumno\desktop\gerflix\gerflix_2.0\serie.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"serie.h"
+
+1538658414 source:c:\users\alumno\desktop\gerflix\gerflix_2.0\us-serie.c
+	<stdio.h>
+	<stdlib.h>
+	"us-serie.h"
+
+1538660447 source:c:\users\alumno\desktop\gerflix\gerflix_2.0\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"usuario.h"
+
+1538662203 c:\users\alumno\desktop\gerflix\gerflix_2.0\serie.h
+
+1538657371 c:\users\alumno\desktop\gerflix\gerflix_2.0\us-serie.h
+	"usuario.h"
+	"serie.h"
+
+1538660047 c:\users\alumno\desktop\gerflix\gerflix_2.0\usuario.h
+
