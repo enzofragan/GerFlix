@@ -16,7 +16,7 @@ void iniciarUsuarios(eUsuario usuarios[],int tamUsu)
 void iniciarUsuariosHardcode(eUsuario usuario[])
 {
     int id[10] = {1,2,3,4,5,6,7,8,9,10};
-    char nombres[][30] = {"juan","maria","pedro","luis","romina","jose","andrea","patricia","luciano","camila"};
+    char nombres[10][30] = {"juan","maria","pedro","luis","romina","jose","andrea","patricia","luciano","camila"};
     int i;
 
     for(i=0;i<10;i++)
