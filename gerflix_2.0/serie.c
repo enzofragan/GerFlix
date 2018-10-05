@@ -31,3 +31,79 @@ void iniciarSeriesHardcode(eSerie series[])
         strcpy(series[i].genero,genero[i]);
     }
 }
+
+int menuSerie()
+{
+    int opcion;
+
+    printf("1- alta serie\n");
+    printf("2- modificacion serie\n");
+    printf("3- baja serie\n");
+    printf("4- salir\n");
+
+
+    opcion=getInt("ingrese una opcion valida ");
+
+    while(opcion>4)
+    {
+        printf("ingrese una opcion valida ");
+        opcion=getInt("ingrese una opcion valida ");
+    }
+
+    return opcion;
+}
+
+int buscarLibreSerie(eSerie series[],int cantiadadSeries)
+{
+     int i;
+    int ret=-1;
+
+    for(i=0; i<cantiadadSeries; i++)
+    {
+        if(series[i].estado==0)
+        {
+            ret=i;
+            break;
+        }
+    }
+
+    return ret;
+}
+
+int autoIdSerie(eSerie series[],int cantiadadSeries)
+{
+    int i;
+    int id;
+
+    i=buscarLibreUsuario(series,cantiadadSeries);
+
+    id=i+1;
+
+    return id;
+}
+
+int altaSerie(eSerie series[],int cantiadadSeries)
+{
+    int i;
+    int id;
+    int ret=-1;
+
+    i=buscarLibreSerie(series,cantiadadSeries);
+
+    if(i>=0)
+    {
+        id=autoIdUsuario(series,cantiadadSeries);
+
+        getString("ingrese su titulo","ingrese un titulo valido ",series[i].titulo);
+
+        printf("ingrese la cantidad de temporadas ");
+
+        getInt("ingrese una cantidad valida ");
+
+        ret=0;
+
+        system("pause");
+    }
+
+    return ret;
+}

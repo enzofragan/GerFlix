@@ -14,3 +14,7 @@ typedef struct
 
 void iniciarSeries(eSerie [],int );
 void iniciarSeriesHardcode(eSerie []);
+int menuSerie();
+int buscarLibreSerie(eSerie [],int );
+int autoIdSerie(eSerie [],int );
+int altaSerie(eSerie [],int );

@@ -15,3 +15,11 @@ typedef struct
 void iniciarSeriesUsuarios(eUsSerie [],int );
 void iniciarSeriesUsuariosHardcode(eUsSerie []);
 void mostrarUsuarioConSuSerie(eUsuario [], int , eSerie [], int ,eUsSerie [], int );
+int getInt(char []);
+char getString(char [],char [],char []);
+float getDec(char [],char []);
+char getChar(char [],char []);
+int esNumerica(char* );
+int esLetra(char* );
+int esDecimal(char* );
+int menu();

@@ -43,3 +43,77 @@ void mostrarListaDeUsuarios(eUsuario usuario[], int cant)
         }
     }
 }
+
+int menuUsuario()
+{
+    int opcion;
+
+    printf("1- alta usuario\n");
+    printf("2- modificacion usuario\n");
+    printf("3- baja usuario\n");
+    printf("4- salir\n");
+
+    opcion=getInt("ingrese una opcion valida ");
+
+    while(opcion>4)
+    {
+        printf("ingrese una opcion valida ");
+        opcion=getInt("ingrese una opcion valida ");
+    }
+
+    return opcion;
+}
+int buscarLibreUsuario(eUsuario usuarios[],int cantiadadUsuarios)
+{
+     int i;
+    int ret=-1;
+
+    for(i=0; i<cantiadadUsuarios; i++)
+    {
+        if(usuarios[i].estado==0)
+        {
+            ret=i;
+            break;
+        }
+    }
+
+    return ret;
+}
+
+int autoIdUsuario(eUsuario usuarios[],int cantiadadUsuarios)
+{
+    int i;
+    int id;
+
+    i=buscarLibreUsuario(usuarios,cantiadadUsuarios);
+
+    id=i+1;
+
+    return id;
+}
+
+int altaUsuario(eUsuario usuarios[],int cantiadadUsuarios)
+{
+    int i;
+    int id;
+    int ret=-1;
+
+    i=buscarLibreUsuario(usuarios,cantiadadUsuarios);
+
+    if(i>=0)
+    {
+        id=autoIdUsuario(usuarios,cantiadadUsuarios);
+
+        getString("ingrese su nombre ","ingrese un nombre valido ",usuarios[i].nombres);
+
+        usuarios[i].id=id;
+
+        ret=0;
+
+        mostrarUsuario(usuarios[i]);
+
+        system("pause");
+    }
+
+    return ret;
+}

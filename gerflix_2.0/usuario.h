@@ -14,3 +14,7 @@ void iniciarUsuarios(eUsuario [],int );
 void iniciarUsuariosHardcode(eUsuario []);
 void mostrarListaDeUsuarios(eUsuario[], int);
 void mostrarUsuario(eUsuario );
+int menuUsuario();
+int buscarLibreUsuario(eUsuario [],int );
+int autoIdUsuario(eUsuario [],int );
+int altaUsuario(eUsuario [],int );
